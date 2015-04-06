@@ -91,7 +91,7 @@ h3 {
 }
 
 .top-logo {
-  &:extend(.bgr-logo);
+  background: url("../images/logo.png") no-repeat;
   background-size: 100% auto;
 
   display: block;
@@ -323,34 +323,6 @@ h3 {
   }
 }
 
-.bgr-list {
-  background-image: url("../images/list.png");
-  background-repeat: no-repeat;
-}
-
-.bgr-list-down {
-  background-image: url("../images/list-down.png");
-}
-
-.bgr-list-up {
-  background-image: url("../images/list-up.png");
-}
-
-.bgr-light {
-  background-image: url("../images/bgr-light.png");
-  background-repeat: repeat;
-}
-
-.bgr-list-normal {
-  background-image: url("../images/list-normal.png");
-  background-repeat: no-repeat;
-}
-
-.bgr-logo {
-  background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
-}
-
 .page-1 {
   &:extend(.page-dark);
   min-height: 988px;
@@ -393,7 +365,8 @@ h3 {
     ul {
       list-style: url("../images/list.png");
       display: inline-block;
-      margin-top: 124px;
+      margin-top: 40px;
+      margin-left: 20px;
 
       @media (max-width: @screen-md-min) {
         margin-top: 0px;
@@ -405,6 +378,7 @@ h3 {
 
       li {
         height: 66px;
+        line-height: 66px;
         padding-left: 30px;
       }
     }
@@ -457,7 +431,7 @@ h3 {
   font-size: 16px;
 
   .page-content {
-    &:extend(.bgr-light);
+    background: url("../images/bgr-light.png") repeat;
     min-height: 955px;
   }
 
@@ -481,12 +455,12 @@ h3 {
   .page-right {
     margin-left: -13px;
     padding-bottom: 40px;
-    margin-top: 118px;
+    margin-top: 68px;
 
     img {
-      opacity: 0.8;
-      padding-left: 146px;
-      padding-top: 51px;
+//      opacity: 0.8;
+      padding-left: 92px;
+      padding-top: 0px;
       padding-bottom: 20px;
 
       @media (max-width: @screen-sm) {
@@ -507,8 +481,7 @@ h3 {
         padding-left: 100px;
 
         @media (max-width: @screen-sm) {
-          &:extend(.bgr-list);
-          background-position: 75px 10px;
+          background: url("../images/list.png") no-repeat 75px 10px;
         }
       }
     }
@@ -526,7 +499,7 @@ h3 {
 
     .scroll-down {
       margin-left: 100px;
-      margin-top: 86px;
+      margin-top: 32px;
       margin-bottom: 48px;
 
       @media (max-width: @screen-lg) {
@@ -582,7 +555,6 @@ h3 {
     background: #ac9782;
 
     @media (max-width: @screen-lg-min) {
-      background-color: rgb(175, 156, 137);
       background-color: rgba(175, 156, 137, 0.3);
     }
 
@@ -666,7 +638,7 @@ h3 {
 
 
     li {
-      &:extend(.bgr-list-up);
+      background-image: url("../images/list-up.png");
       padding-bottom: 24px;
 
       &:nth-child(2) {
@@ -693,8 +665,7 @@ h3 {
           text-align: left;
           min-height: 81px;
           height: auto;
-          &:extend(.bgr-list);
-          background-position: 15px 10px;
+          background: url("../images/list.png") no-repeat 15px 10px;
           padding-left: 48px;
         }
       }
@@ -719,7 +690,7 @@ h3 {
 
           &:nth-child(2) {
             @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
-              &:extend(.bgr-list-down);
+              background-image: url("../images/list-down.png");
               background-position: 74px 0px;
               padding-top: 55px;
               margin-left: 76px;
@@ -733,7 +704,7 @@ h3 {
 
           &:nth-child(3) {
             @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min)  {
-              &:extend(.bgr-list-down);
+              background-image: url("../images/list-down.png");
               background-position: 74px 0px;
               padding-top: 55px;
               margin-left: 76px;
@@ -756,7 +727,7 @@ h3 {
 
         li {
           @media (min-width: @screen-sm-min) {
-            &:extend(.bgr-list-down);
+            background-image: url("../images/list-down.png");
             padding-top: 80px;
             background-position: 120px 0px;
           }
@@ -770,7 +741,7 @@ h3 {
 
           &:nth-child(1), &:nth-child(2)  {
             @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
-              &:extend(.bgr-list-up);
+              background-image: url("../images/list-up.png");
             }
           }
 
@@ -814,8 +785,7 @@ h3 {
           text-align: left;
           min-height: 81px;
           height: auto;
-          &:extend(.bgr-list);
-          background-position: 15px 10px;
+          background: url("../images/list.png") no-repeat 15px 10px;
           padding-left: 48px;
         }
       }
@@ -851,7 +821,7 @@ h3 {
 
           &:nth-child(3) {
             @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
-              &:extend(.bgr-list-down);
+              background-image: url("../images/list-down.png");
               background-position: 74px 0px;
               padding-top: 55px;
               margin-left: 115px;
@@ -874,7 +844,7 @@ h3 {
         li {
           @media (min-width: @screen-sm-min) {
             background-position: 0px 0px;
-            &:extend(.bgr-list-down);
+            background-image: url("../images/list-down.png");
             padding-top: 80px;
           }
 
@@ -886,14 +856,14 @@ h3 {
               margin-left: 192px;
               padding-right: 30px;
               background-position: 30px 100%;
-              &:extend(.bgr-list-up);
+              background-image: url("../images/list-up.png");
             }
           }
 
           &:nth-child(2) {
             @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
               background-position: 42px 0px;
-              &:extend(.bgr-list-down);
+              background-image: url("../images/list-down.png");
               padding-top: 80px;
             }
           }
@@ -935,7 +905,7 @@ h3 {
 
 .page-4 {
   &:extend(.page-light);
-  &:extend(.bgr-light);
+  background: url("../images/bgr-light.png") repeat;
   line-height: 29px;
   font-size: 16px;
 
@@ -1116,14 +1086,12 @@ h3 {
       padding-left: 0;
 
       li {
-        &:extend(.bgr-list-normal);
-        background-position: 0 31px;
+        background: url("../images/list-normal.png") no-repeat 0px 31px;
         padding-left: 63px;
         margin-top: 37px;
 
         @media (max-width: @screen-sm) {
-          &:extend(.bgr-list);
-          background-position: 32px 41px;
+          background: url("../images/list.png") no-repeat 32px 41px;
         }
 
       }
@@ -1166,7 +1134,7 @@ h3 {
 
 .page-6 {
   &:extend(.page-light);
-  &:extend(.bgr-light);
+  background: url("../images/bgr-light.png") repeat;
   line-height: 29px;
   font-size: 21px;
 
@@ -1289,14 +1257,12 @@ h3 {
       margin-top: 165px;
 
       li {
-        &:extend(.bgr-list-normal);
-        background-position: 0 21px;
+        background: url("../images/list-normal.png") no-repeat 0px 21px;
         padding-left: 68px;
         padding-bottom: 18px;
 
         @media (max-width: @screen-sm) {
-          &:extend(.bgr-list);
-          background-position: 32px 24px;
+          background: url("../images/list.png") no-repeat 32px 24px;
         }
       }
     }
@@ -1352,7 +1318,7 @@ h3 {
   .bottom-logo {
     position: absolute;
     left: 50%;
-    &:extend(.bgr-logo);
+    background: url("../images/logo.png") no-repeat;
     width: 63px;
     margin-left: -32px;
     height: 63px;
