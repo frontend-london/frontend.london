@@ -1,0 +1,115 @@
+// PAGE 5 - BLOG
+
+.page-5 {
+  &:extend(.page-dark);
+  line-height: 29px;
+  color: @text-color-silver;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-family: 'Armata', sans-serif;
+    font-size: 21px;
+    color: @brand-primary;
+    text-align: right;
+    line-height: 32px;
+  }
+
+  h4 {
+    color: @silver-dark;
+    font-family: 'Armata', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .page-left {
+    padding-left: 0;
+    padding-right: 60px;
+    padding-top: 60px;
+
+    p {
+      margin: 30px 0px;
+      font-size: 13px;
+      font-family: 'Armata', sans-serif;
+
+    }
+
+    .scroll-down {
+      margin: 20px 0px 60px 0px;
+    }
+  }
+
+  .page-right {
+    margin-left: -13px;
+    margin-top: 178px;
+    padding-right: 0;
+
+    h2 {
+      color: @header-color;
+      font-family: 'Armata', sans-serif;
+      font-size: 21px;
+      text-align: left;
+      margin-left: 63px;
+      margin-bottom: 46px;
+    }
+
+    h3 {
+      text-align: left;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        background: url("../images/list-normal.png") no-repeat 0px 31px;
+        padding-left: 63px;
+        margin-top: 37px;
+
+        @media (max-width: @screen-sm) {
+          background: url("../images/list.png") no-repeat 32px 41px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 21px;
+      color: @header-color-light;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: @brand-secondary;
+    }
+
+    .scroll-down {
+      margin: 28px 0px 54px 63px;
+    }
+  }
+
+  .page-middle {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    top: 0px;
+    background: @brand-primary;
+
+    .logo {
+      position: absolute;
+      left: -29px;
+      top: 99px;
+    }
+  }
+}

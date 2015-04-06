@@ -9,6 +9,8 @@
   "latedef"  : true,
   "laxbreak" : true,
   "nonbsp"   : true,
+  "debug"    : true,
+  "devel"    : true,
   "strict"   : true,
   "undef"    : true,
   "unused"   : true

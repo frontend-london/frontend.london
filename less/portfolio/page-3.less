@@ -1,0 +1,350 @@
+// PAGE 3 - OFFER
+
+.page-3 {
+  &:extend(.page-dark);
+
+  h1 {
+    padding-right: 55px;
+    padding-bottom: 20px;
+  }
+
+  .page-left {
+    padding: 65px 0 0 0;
+  }
+
+  .scroll-down {
+    margin: 0 61px 70px 61px;
+  }
+
+  .page-middle {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    top: 0px;
+    background: @brand-primary;
+
+    @media (max-width: @screen-lg-min) {
+      background-color: rgba(175, 156, 137, 0.3);
+    }
+
+    @media (max-width: @screen-sm) {
+      display: block;
+      width: 0;
+
+      .logo {
+        display: none;
+      }
+    }
+
+    .line, .line-2 {
+      background: @brand-primary;
+      height: 4px;
+      width: 904px;
+      top: 487px;
+      left: 50%;
+      margin-left: -452px;
+      position: absolute;
+
+      @media (max-width: @screen-lg-min) {
+        top: 489px;
+      }
+
+      @media (max-width: @screen-sm-min) {
+        display: none;
+      }
+
+    }
+
+    .line-2 {
+      display: none;
+
+      @media (max-width: @screen-lg-min) {
+        display: block;
+        top: 1129px;
+      }
+
+
+      @media (max-width: @screen-sm-min) {
+        top: 1296px;
+        display: none;
+      }
+
+    }
+
+    .logo {
+      position: absolute;
+      left: -29px;
+      top: 91px;
+    }
+  }
+
+  .page-right {
+    padding: 131px 0 0 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Armata', sans-serif;
+    font-size: 13px;
+    margin-bottom: 0;
+
+    li {
+      background-repeat: no-repeat;
+      width: 137px;
+      margin: 0px 26px;
+      line-height: 26px;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: content-box;
+      height: 273px;
+    }
+  }
+
+  ul.ul-top {
+    margin-bottom: 0px;
+
+    li {
+      background-image: url("../images/list-up.png");
+      padding-bottom: 24px;
+    }
+  }
+
+  .page-left {
+    .scroll-down {
+      @media (max-width: @screen-sm-min) {
+        display: none;
+      }
+    }
+
+    ul {
+      li {
+        @media (max-width: @screen-sm-min) {
+          margin: 0;
+          padding: 0;
+          width: auto;
+          text-align: left;
+          min-height: 81px;
+          height: auto;
+          background: url("../images/list.png") no-repeat 15px 10px;
+          padding-left: 48px;
+        }
+      }
+
+      &.ul-top {
+        li {
+          @media (min-width: @screen-sm-min) {
+            background-position: 120px 100%;
+          }
+
+          &:first-child {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              margin-right: 234px;
+            }
+
+            @media (max-width: @screen-md) and (min-width: @screen-sm-min) {
+              margin-left: 36px;
+              background-position: 89px 100%;
+            }
+          }
+
+          &:nth-child(2) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-image: url("../images/list-down.png");
+              background-position: 74px 0px;
+              padding-top: 55px;
+              margin-left: 76px;
+              margin-right: 26px;
+            }
+
+            @media (max-width: @screen-md)  {
+              margin-left: 0;
+            }
+          }
+
+          &:nth-child(3) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min)  {
+              background-image: url("../images/list-down.png");
+              background-position: 74px 0px;
+              padding-top: 55px;
+              margin-left: 76px;
+              margin-right: -90px;
+            }
+          }
+        }
+      }
+
+      &.ul-bottom {
+        @media (max-width: @screen-sm-min) {
+          text-align: left;
+        }
+
+        @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+          margin-left: -50px;
+          margin-top: -65px;
+          margin-right: -83px;
+        }
+
+        li {
+          @media (min-width: @screen-sm-min) {
+            background-image: url("../images/list-down.png");
+            padding-top: 80px;
+            background-position: 120px 0px;
+          }
+
+          &:nth-child(1) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              padding-right: 30px;
+              background-position: 120px 100%;
+            }
+          }
+
+          &:nth-child(1), &:nth-child(2)  {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-image: url("../images/list-up.png");
+            }
+          }
+
+          &:nth-child(2) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-position: 72px 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              padding-right: 223px;
+            }
+          }
+        }
+      }
+
+      li:last-child {
+        padding-right: 35px;
+      }
+
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .page-right {
+    @media (max-width: @screen-sm-min) {
+      padding-top: 0;
+    }
+
+    ul {
+      li {
+        @media (max-width: @screen-sm-min) {
+          margin: 0;
+          padding: 0;
+          width: auto;
+          text-align: left;
+          min-height: 81px;
+          height: auto;
+          background: url("../images/list.png") no-repeat 15px 10px;
+          padding-left: 48px;
+        }
+      }
+
+      &.ul-top {
+        @media (min-width: @screen-sm-min) {
+          padding-top: 61px;
+        }
+
+        @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+          padding-top: 64px;
+        }
+
+        li {
+          @media (min-width: @screen-sm-min) {
+            background-position: 0px 100%;
+          }
+
+          &:first-child {
+            @media (min-width: @screen-sm-min) {
+              background-position: 85px 100%;
+            }
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              margin-left: -93px;
+            }
+          }
+
+          &:nth-child(2) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-position: 55px 100%;
+            }
+          }
+
+          &:nth-child(3) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-image: url("../images/list-down.png");
+              background-position: 74px 0px;
+              padding-top: 55px;
+              margin-left: 115px;
+            }
+
+            @media (max-width: @screen-md) and (min-width: @screen-sm-min) {
+              margin-left: 140px;
+              background-position: 49px 0px;
+            }
+          }
+        }
+      }
+
+      &.ul-bottom {
+        @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+          margin-top: -65px;
+          margin-left: -76px;
+        }
+
+        li {
+          @media (min-width: @screen-sm-min) {
+            background-position: 0px 0px;
+            background-image: url("../images/list-down.png");
+            padding-top: 80px;
+          }
+
+          &:first-child {
+            @media (min-width: @screen-sm-min) {
+              background-position: 85px 0px;
+            }
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              margin-left: 192px;
+              padding-right: 30px;
+              background-position: 30px 100%;
+              background-image: url("../images/list-up.png");
+            }
+          }
+
+          &:nth-child(2) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              background-position: 42px 0px;
+              background-image: url("../images/list-down.png");
+              padding-top: 80px;
+            }
+          }
+
+          &:nth-child(3) {
+            @media (max-width: @screen-lg-min) and (min-width: @screen-sm-min) {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+
+      li:first-child {
+        @media (min-width: @screen-sm-min) {
+          padding-left: 35px;
+        }
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+// PAGE 1 - WELCOME
+
+.page-1 {
+  &:extend(.page-dark);
+  min-height: 988px;
+  padding-bottom: -50px;
+
+  h1 {
+    span {
+      margin: 0 -13px
+    }
+  }
+
+  .page-left {
+    padding-right: 60px;
+    padding-top: 13px;
+    padding-bottom: 64px;
+
+    h1 {
+      @media (max-width: @screen-sm) {
+        padding-top: 80px;
+      }
+    }
+
+    .scroll-down {
+      position: absolute;
+      right: 60px;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: 'Armata', sans-serif;
+      line-height: 33px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .page-right {
+    padding-bottom: 38px;
+
+    ul {
+      list-style: url("../images/list.png");
+      display: inline-block;
+      margin-top: 50px;
+      margin-left: 20px;
+
+      @media (max-width: @screen-md-min) {
+        margin-top: 0px;
+
+        &:first-child {
+          margin-top: 56px;
+        }
+      }
+
+      li {
+        height: 66px;
+        line-height: 66px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .page-middle {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    top: 274px;
+    background: @brand-primary;
+
+    .logo {
+      position: absolute;
+      left: -29px;
+      top: 56px;
+
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+  }
+}

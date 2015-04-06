@@ -1,0 +1,105 @@
+// PAGE 2 - ABOUT ME
+
+.page-2 {
+  &:extend(.page-light);
+
+  line-height: 29px;
+  font-size: 16px;
+
+  .page-content {
+    background: url("../images/bgr-light.png") repeat;
+    min-height: 955px;
+  }
+
+  .page-left {
+    padding-right: 60px;
+    padding-top: 60px;
+
+    p {
+      margin: 50px 0px;
+
+      a {
+        color: @gray-dark;
+      }
+    }
+
+    .scroll-down {
+      margin: 20px 0px 60px 0px;
+    }
+  }
+
+  .page-right {
+    margin-left: -13px;
+    padding-bottom: 40px;
+    margin-top: 68px;
+
+    img {
+      padding-left: 92px;
+      padding-top: 0px;
+      padding-bottom: 20px;
+
+      @media (max-width: @screen-sm) {
+        padding-left: 0;
+        float: right;
+        padding-top: 80px;
+        clear: both;
+        padding-right: 16px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        background: url("../images/list-long.png") no-repeat 0px 6px;
+        padding-left: 100px;
+
+        @media (max-width: @screen-sm) {
+          background: url("../images/list.png") no-repeat 75px 10px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 21px;
+      color: @header-color-light;
+      padding-bottom: 10px;
+      padding-left: 100px;
+      text-align: left;
+      @media (max-width: @screen-sm) {
+        padding-left: 70px;
+      }
+    }
+
+    .scroll-down {
+      margin-left: 100px;
+      margin-top: 32px;
+      margin-bottom: 48px;
+
+      @media (max-width: @screen-lg) {
+        margin-top: 38px;
+      }
+    }
+
+    a {
+      color: @brand-secondary;
+    }
+  }
+
+  .page-middle {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    top: 0px;
+    background: @brand-primary;
+
+    .logo {
+      position: absolute;
+      left: -29px;
+      top: 99px;
+    }
+  }
+}

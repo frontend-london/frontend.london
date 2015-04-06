@@ -1,0 +1,139 @@
+// PAGE 4 - PORTFOLIO
+
+.page-4 {
+  &:extend(.page-light);
+  background: url("../images/bgr-light.png") repeat;
+  line-height: 29px;
+  font-size: 16px;
+
+  .scroll-down {
+    margin: 35px 36px 60px 36px;
+  }
+
+  .page-left.text-right {
+    padding-right: 60px;
+    padding-top: 60px;
+
+    p {
+      margin: 20px 0px 60px;
+    }
+  }
+
+  .page-middle {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    top: 0px;
+    background: @brand-primary;
+
+    .logo {
+      position: absolute;
+      left: -29px;
+      top: 99px;
+    }
+  }
+
+  .page-whole {
+    position: relative;
+
+    nav {
+      .arrow-left, .arrow-right {
+        position: absolute;
+        top: 50%;
+        margin-top: -113px;
+      }
+
+      .arrow-left {
+        left: -29px;
+
+        @media (max-width: @screen-md) {
+          left: -11px;
+        }
+      }
+
+      .arrow-right {
+        right: -29px;
+
+        @media (max-width: @screen-md) {
+          right: -11px;
+        }
+      }
+
+      ul.slides {
+        padding: 10px 0;
+        background: @slides-bgr;
+        height: 64px;
+        margin: 0 auto;
+        width: 189px;
+
+        li {
+          list-style: none;
+          display: inline-block;
+          margin: 0 8px;
+
+          a {
+            display: block;
+            width: 44px;
+            height: 44px;
+            background: @brand-primary;
+            border-radius: 22px;
+
+            &.active {
+              background: @silver;
+            }
+          }
+        }
+      }
+    }
+
+    .thumbs {
+      padding-left: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        border: 2px solid @brand-primary;
+        margin: 11px;
+      }
+    }
+
+    .thumbs:nth-of-type(n+2) {
+      display: none;
+    }
+  }
+}
+
+.site-details {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  background: white;
+  opacity: 0.9;
+  font-weight: bold;
+  border: 1px solid black;
+  left: 15px;
+  right: 15px;
+  z-index: 8050;
+}
+
+.see-details {
+  margin-left: 10px;
+  border-bottom: 1px @brand-primary dotted;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  &:hover, &:active, &.visited {
+    border-bottom: none;
+    text-decoration: none;
+  }
+}
+
+.fancybox-title.fancybox-title-inside-wrap {
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 17px;
+}
