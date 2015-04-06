@@ -1,0 +1,35 @@
+{
+  "name": "frontend.london",
+  "description": "Piotr Kołodziejczyk frontend developer portfolio",
+  "version": "3.2.0",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://frontend.london",
+  "main": [
+    "less/bootstrap.less",
+    "dist/css/bootstrap.css",
+    "dist/js/bootstrap.js",
+    "dist/fonts/glyphicons-halflings-regular.eot",
+    "dist/fonts/glyphicons-halflings-regular.svg",
+    "dist/fonts/glyphicons-halflings-regular.ttf",
+    "dist/fonts/glyphicons-halflings-regular.woff"
+  ],
+  "ignore": [
+    ".*",
+    "CNAME",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "fancybox": "~2.1.5"
+  }
+}

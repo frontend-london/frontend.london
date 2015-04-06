@@ -1,0 +1,21 @@
+<html>
+<head>
+    <base href="<?=ADRES?>" />
+    <title>Pobrano CV ze strony frontend.london!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+  <h3>Właśnie ktoś pobrał Twoje CV w wersji <span class="red"><?=$wersja_text?>! <img src="images/flags/<?=$wersja?>.gif" alt="<?=$wersja?>" /></span></h3>
+  <p>Adres IP: <a href="http://whatismyipaddress.com/ip/<?=$post_ip?>"><?=$post_ip?></a></p>
+  <p>Data i godzina: <?=date('d.m.y H:i:s')?></p>
+  <p>Licznik pobrań: <b><?=$counter?></b></p>
+  <p>  ------------------------------ <br />
+      <a href="http://frontend.london">frontend.london</a>
+  </p>
+</body>
+</html>

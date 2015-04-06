@@ -1,0 +1,23 @@
+DirectoryIndex index.php index.html index.htm index.php3
+Options -Indexes
+
+RewriteEngine on
+# wlaczenie mechanizmu mod_rewrite
+
+RewriteBase /
+
+RewriteRule ^cv.pdf$ cv.php?wersja=en [L]
+RewriteRule ^cv_pl.pdf$ cv.php?wersja=pl [L]
+
+RewriteCond %{HTTP_HOST} !^frontend.london
+RewriteRule ^(.*)$ http://frontend.london/$1 [R=301,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# omija regule gdy pliki fizycznie istnieja
+
+#RewriteRule ^.*\.html$ index.php [QSA]
+RewriteRule ^.*$ index.php [QSA]
+
+# NUMER.php [QSA] = przekazuj parametry
