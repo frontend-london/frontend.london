@@ -125,10 +125,14 @@ h1 {
   font-family: 'Russo One', sans-serif;
   font-weight: normal;
   color: @brand-primary;
+
+  @media (max-width: @screen-xs-min) {
+      font-size: 15vw;
+  }
 }
 
 h3 {
-  margin: 17px 0
+  margin: 17px 0;
 }
 
 .position {
@@ -320,5 +324,9 @@ h3 {
     font-size: 24px;
     text-align: center;
     padding-top: 90px;
+  }
+
+  h3 {
+    line-height: 20px;
   }
 }

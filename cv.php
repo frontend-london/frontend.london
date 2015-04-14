@@ -53,14 +53,10 @@
 
 
     /*
-     * Wyświetlenie PDF'a
+     * Shows PDF
      */
     header('Content-type: application/pdf');
     header('Content-Disposition: attachment; filename="cv.pdf"');
-    if($version=='en') {
-        readfile('files/cv_peter_kolodziejczyk.pdf');
-    } else {
-        readfile('files/cv_piotr_kolodziejczyk.pdf');
-    }
+    readfile('files/cv.pdf');
     
 ?>

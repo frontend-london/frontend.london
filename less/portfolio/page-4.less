@@ -8,11 +8,19 @@
 
   .scroll-down {
     margin: 35px 36px 60px 36px;
+
+    @media (max-width: @screen-xs-min) {
+      margin: 35px 0px 60px 0px;
+    }
   }
 
   .page-left.text-right {
     padding-right: 60px;
     padding-top: 60px;
+
+    @media (max-width: @screen-xs-min) {
+      padding-right: 15px;
+    }
 
     p {
       margin: 20px 0px 60px;
@@ -46,18 +54,20 @@
       }
 
       .arrow-left {
-        left: -29px;
+        left: -2%;
 
-        @media (max-width: @screen-md) {
-          left: -11px;
+
+        @media (max-width: @screen-lg-min) {
+          left: -1%;
         }
       }
 
       .arrow-right {
-        right: -29px;
+        right: -2%;
 
-        @media (max-width: @screen-md) {
-          right: -11px;
+        @media (max-width: @screen-lg-min) {
+
+          right: -1%;
         }
       }
 

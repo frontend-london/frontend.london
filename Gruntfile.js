@@ -337,7 +337,11 @@ module.exports = function (grunt) {
         tasks: ['jshint:test', 'qunit']
       },
       less: {
-        files: 'less/*.less',
+//        files: 'less/*.less',
+        files: ['less/*.less', 'less/portfolio/*.less'],
+//        files: {
+//          "css/*.css": "less/*.less"
+//        },
         tasks: 'less'
       }
     },
