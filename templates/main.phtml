@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frontend.London - Piotr Kołodziejczyk</title>
-    <? if ($deb): ?>
+    <?php if ($deb): ?>
         <link rel="stylesheet" href="dist/css/frontend.london.css" type="text/css" />
         <link rel="stylesheet" href="dist/css/frontend.london-theme.css" type="text/css" />
-    <? else : ?>
+    <?php else: ?>
         <link rel="stylesheet" href="dist/css/frontend.london.min.css" type="text/css" />
         <link rel="stylesheet" href="dist/css/frontend.london-theme.min.css" type="text/css" />
-    <?endif?>
+    <?php endif ?>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--[if lt IE 9]>
@@ -736,13 +736,17 @@
                         <dt>tel.</dt>	<dd>+44 (0)743 8810 321</dd>
                         <dt>skype</dt>	<dd><a href="skype://modul007">modul007</a></dd>
                         <dt>email:</dt>		<dd><a href="mailto:contact@frontend.london">contact@frontend.london</a> </dd>
+                        <dt></dt>
                     </dl>
-                    <ul>
-                        <li><a href="mailto:contact@frontend.london"><img src="images/icons/email.png" alt="Email"></a></li>
-                        <li><a href="https://www.facebook.com/kolodziejczyk.piotr" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="http://lnkd.in/XnUu2m" target="_blank"><img src="images/icons/linkedin.png" alt="Linkedin"></a></li>
-                        <li><a href="cv.pdf"><img src="images/icons/cv.png" alt="CV"></a></li>
-                    </ul>
+                    
+                    
+                        <ul>
+    <!--                        <li><a href="https://www.facebook.com/kolodziejczyk.piotr" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>-->
+                            <li><a href="mailto:contact@frontend.london"><img src="images/icons/email.png" alt="Email"></a></li>
+                            <li><a href="http://lnkd.in/XnUu2m" target="_blank"><img src="images/icons/linkedin.png" alt="Linkedin"></a></li>
+                            <li><a href="cv.pdf"><img src="images/icons/cv.png" alt="CV"></a></li>
+                        </ul>
+                    
                 </div>
             </div>
         </div>
@@ -763,7 +767,7 @@
     <script type="text/javascript" src="bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <link rel="stylesheet" type="text/css" href="bower_components/fancybox/source/jquery.fancybox.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css" media="screen" />
-    <? if ($deb): ?>
+    <?php if ($deb): ?>
         <script type="text/javascript" src="js/transition.js"></script>
         <script type="text/javascript" src="js//alert.js"></script>
         <script type="text/javascript" src="js//button.js"></script>
@@ -777,9 +781,9 @@
         <script type="text/javascript" src="js//tab.js"></script>
         <script type="text/javascript" src="js//affix.js"></script>
         <script type="text/javascript" src="js//portfolio.js"></script>
-    <? else : ?>
+    <?php else : ?>
         <script type="text/javascript" src="dist/js/frontend.london.min.js"></script>
-    <?endif?>
+    <?php endif?>
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Armata" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Russo+One" />

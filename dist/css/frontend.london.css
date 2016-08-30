@@ -1,6 +1,6 @@
 /*!
  * Frontend.London v1.1.0 (https://github.com/frontend-london/portfolio)
- * Copyright 2015-2015 Piotr Kołodziejczyk
+ * Copyright 2015-2016 Piotr Kołodziejczyk
  * Licensed under MIT 
  */
 
@@ -7365,6 +7365,7 @@ h3 {
 @media (max-width: 768px) {
   .page-6 .page-right dl {
     margin-right: -33px;
+    margin-bottom: 150px;
   }
 }
 .page-6 .page-right dt,
@@ -7378,20 +7379,54 @@ h3 {
   width: 79px;
   clear: both;
 }
+.page-6 .page-right dt:last-of-type {
+  float: none;
+}
 .page-6 .page-right ul {
-  padding-top: 20px;
+  padding-top: 32px;
   padding-left: 0;
   clear: both;
   list-style: none;
 }
+@media (max-width: 992px) {
+  .page-6 .page-right ul {
+    padding-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .page-6 .page-right ul {
+    position: absolute;
+    bottom: 74px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
 .page-6 .page-right ul li {
-  padding-bottom: 18px;
+  padding-bottom: 32px;
   padding-left: 68px;
   background: url("../images/list-normal.png") no-repeat 0 21px;
 }
+@media (min-width: 992px) {
+  .page-6 .page-right ul li:last-of-type {
+    padding-bottom: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .page-6 .page-right ul li {
+    padding-bottom: 10px;
+  }
+}
 @media (max-width: 768px) {
   .page-6 .page-right ul li {
-    background: url("../images/list.png") no-repeat 32px 24px;
+    display: inline-block;
+    width: 32%;
+    padding: 0 30px;
+    padding: 0;
+    margin: 0 auto;
+    margin: 0;
+    text-align: center;
+    background: none;
   }
 }
 .page-6 .page-right h3 {
